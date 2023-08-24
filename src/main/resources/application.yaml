@@ -1,0 +1,21 @@
+#configuration for postgresql
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 123456
+    url: jdbc:postgresql://localhost:5432/postgres
+
+#configuration for jpa
+
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+
+
